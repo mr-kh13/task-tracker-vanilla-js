@@ -3,3 +3,46 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
+.container {
+  background-color: #fff;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: fixed;
+  inset: 0;
+}
+
+.tasks-list {
+  width: 300px;
+  flex-shrink: 0;
+  min-height: 300px;
+  background-color: #eee;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tasks-list:not(:last-of-type) {
+  border-right: 1px solid #000;
+}
+
+.tasks-list .title {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000;
+  padding: 1rem;
+}
+
+.task-item {
+  width: 100%;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+  user-select: none;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+}
