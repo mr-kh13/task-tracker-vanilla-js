@@ -46,3 +46,8 @@ body {
 .task-item.completed {
   text-decoration: line-through;
 }
+
+.draggable.dragging {
+  border: 1px dashed #000;
+  opacity: 1;
+}
